@@ -1,0 +1,83 @@
+﻿@model EFCodeFirst.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand.BrandName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand.BrandName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfPurchase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfPurchase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvailabilityStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvailabilityStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

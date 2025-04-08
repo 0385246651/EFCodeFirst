@@ -1,0 +1,222 @@
+﻿@model IEnumerable<EFCodeFirst.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mt-2">Products</h2>
+
+<form action="/products/index"
+      class="d-flex flex-row align-items-center flex-wrap" style="display: flex; gap: 10px; align-items:center">
+    <label for="search" class="mx-2 my-1">
+        Search
+    </label>
+    <div class="input-group w-auto" style="display: flex ; gap: 10px">
+        <input type="search" name="search" id="search" class="form-control"
+               placeholder="Enter ... to search" value="@ViewBag.Search" />
+
+        <button type="submit" class="btn btn-primary">
+            Go
+        </button>
+
+        <button type="reset" class="btn btn-info" id="clearSearch">
+            Reset
+        </button>
+    </div>
+</form>
+
+
+<button class="btn btn-default" style="margin : 20px 0">
+    @Html.ActionLink("Create New", "Create")
+</button>
+
+@{
+    string iconClass = "";
+    if (ViewBag.IconClass == "fa-sort-desc")
+    {
+        iconClass = "fa-sort-asc";
+    }
+    else
+    {
+        iconClass = "fa-sort-desc";
+    }
+}
+
+
+<table class="table">
+    <tr>
+        <th class="">
+            <a href="/products/index?SortColumn=ProductID&IconClass=@iconClass&page=1">
+                @Html.DisplayNameFor(model => model.ProductID)
+                @*<br/>*@
+                @if (ViewBag.SortColumn == "ProductID")
+                {
+                    <i class="fa @ViewBag.IconClass"></i>
+                }
+            </a>
+        </th>
+        <th>
+            <a href="/products/index?SortColumn=ProductName&IconClass=@iconClass&page=1">
+                @Html.DisplayNameFor(model => model.ProductName)
+            </a>
+            <br />
+            @if (ViewBag.SortColumn == "ProductName")
+            {
+                <i class="fa @ViewBag.IconClass"></i>
+            }
+        </th>
+        <th>
+            <a href="/products/index?SortColumn=Price&IconClass=@iconClass&page=1">
+                @Html.DisplayNameFor(model => model.Price)
+            </a>
+            <br />
+            @if (ViewBag.SortColumn == "Price")
+            {
+                <i class="fa @ViewBag.IconClass"></i>
+            }
+        </th>
+        <th>
+            <a href="/products/index?SortColumn=DateOfPurchase&IconClass=@iconClass&page=1">
+                @Html.DisplayNameFor(model => model.DateOfPurchase)
+            </a>
+            <br />
+            @if (ViewBag.SortColumn == "DateOfPurchase")
+            {
+                <i class="fa @ViewBag.IconClass"></i>
+            }
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailabilityStatus)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Brand.BrandName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @item.DateOfPurchase.Value.ToString("dd/MM/yyyy")
+            </td>
+
+            @if (item.AvailabilityStatus == "InStock")
+            {
+                <td class="text-success ">
+                    @Html.DisplayFor(modelItem => item.AvailabilityStatus)
+                </td>
+            }
+            else
+            {
+                <td class="text-danger lead">
+                    @Html.DisplayFor(modelItem => item.AvailabilityStatus)
+                </td>
+            }
+
+            <td class="text-center">
+                <input type="checkbox" @(item.Active.HasValue && item.Active.Value ? "checked" : "") disabled />
+            </td>
+
+            <td>
+                @*Navigation Properties*@
+                @Html.DisplayFor(modelItem => item.Brand.BrandName)
+            </td>
+            <td>
+                @*Navigation Properties*@
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                <button class="btn btn-default">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductID })
+                </button>
+                <button class="btn btn-default">
+                    @Html.ActionLink("Details", "Details", new { id = item.ProductID })
+                </button>
+                <button class="btn btn-danger" onclick="confirmDelete('@Url.Action("Delete", "Products", new { id = item.ProductID })', '@item.ProductName')">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    }
+
+    <tr>
+        <td colspan="9">
+            @{
+                int PreviousPage = ViewBag.Page - 1;
+                if (PreviousPage < 0)
+                {
+                    PreviousPage = 1;
+                }
+                int NextPage = ViewBag.Page + 1;
+                if (NextPage > ViewBag.NoOfPages)
+                {
+                    NextPage = ViewBag.NoOfPages;
+                }
+            }
+
+            <ul class="pagination justify-content-center">
+                <li class="page-item ">
+                    <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@PreviousPage">
+                        Previous
+                    </a>
+                </li>
+
+                @for (int i = 0; i < ViewBag.NoOfPages; i++)
+                {
+                    if (i + 1 == ViewBag.Page)
+                    {
+                        <li class="page-item active">
+                            <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
+                                @(i+1)
+                            </a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
+                                @(i+1)
+                            </a>
+                        </li>
+                    }
+
+                }
+
+                <li class="page-item active">
+                    <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@NextPage">
+                        Next
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<script>
+    document.getElementById("clearSearch").addEventListener("click", function () {
+        window.location.href = "/products/index"; // Redirect để reset ViewBag
+    });
+
+    function confirmDelete(url, name) {
+        if (confirm(`Are you sure you want to delete Product: ${name} ?`)) {
+            window.location.href = url; // Nếu người dùng xác nhận, sẽ chuyển hướng đến URL xóa
+        }
+    }
+</script>
