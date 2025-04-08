@@ -1,4 +1,5 @@
 ﻿@model EFCodeFirst.Models.Product
+@using EFCodeFirst.HtmlHelpers
 
 @{
     ViewBag.Title = "Create";
@@ -21,8 +22,11 @@
             </div>
         </div>
 
+        @*@Html.InputHelp("col-sm-10", "Price", "Price")*@
         <div class="mb-3 row">
             <label for="Price" class="col-sm-2 col-form-label">Price</label>
+
+
             <div class="col-sm-10">
                 <input type="number" id="Price" name="Price" class="form-control" value="@Model?.Price" placeholder="Price" required />
                 <span class="text-danger">@Html.ValidationMessage("Price")</span>
