@@ -134,6 +134,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202504030213303_InitialCreate.cs" />
+    <Compile Include="Migrations\202504030213303_InitialCreate.Designer.cs">
+      <DependentUpon>202504030213303_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504080253241_AddQuantityRow.cs" />
+    <Compile Include="Migrations\202504080253241_AddQuantityRow.Designer.cs">
+      <DependentUpon>202504080253241_AddQuantityRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504080255462_RemoveQuantity.cs" />
+    <Compile Include="Migrations\202504080255462_RemoveQuantity.Designer.cs">
+      <DependentUpon>202504080255462_RemoveQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504080300196_AddQuantityRowNotNull.cs" />
+    <Compile Include="Migrations\202504080300196_AddQuantityRowNotNull.Designer.cs">
+      <DependentUpon>202504080300196_AddQuantityRowNotNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CompanyDBContext.cs" />
@@ -216,7 +233,20 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202504030213303_InitialCreate.resx">
+      <DependentUpon>202504030213303_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504080253241_AddQuantityRow.resx">
+      <DependentUpon>202504080253241_AddQuantityRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504080255462_RemoveQuantity.resx">
+      <DependentUpon>202504080255462_RemoveQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504080300196_AddQuantityRowNotNull.resx">
+      <DependentUpon>202504080300196_AddQuantityRowNotNull.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
