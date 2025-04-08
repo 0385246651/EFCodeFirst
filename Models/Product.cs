@@ -11,7 +11,11 @@ namespace EFCodeFirst.Models
         [Key]
 		public long ProductID { get; set; }
         public string ProductName { get; set; }
-		public Nullable<decimal> Price { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:C}")]
+        public Nullable<decimal> Price { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy}")]
         public Nullable<System.DateTime> DateOfPurchase { get; set; }
         public string AvailabilityStatus { get; set; }
         public Nullable<long> CategoryID { get; set; }

@@ -5,44 +5,45 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2 class="mt-2">Create</h2>
+<h2 class="mt-3">Create</h2>
 
-<form action="/products/create" method="post">
-    @Html.AntiForgeryToken()
-
-    <div class="form-horizontal">
+@using (Html.BeginForm("Create", "Products", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="mt-4">
         <h4>Product</h4>
         <hr />
 
-        <div class="form-group">
-            <label for="ProductName" class="control-label col-md-2">Product Name</label>
-            <div class="col-md-10">
+        <div class="mb-3 row">
+            <label for="ProductName" class="col-sm-2 col-form-label">Product Name</label>
+            <div class="col-sm-10">
                 <input type="text" id="ProductName" name="ProductName" class="form-control" placeholder="Product name" required />
                 <span class="text-danger">@Html.ValidationMessage("ProductName")</span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="Price" class="control-label col-md-2">Price</label>
-            <div class="col-md-10">
+        <div class="mb-3 row">
+            <label for="Price" class="col-sm-2 col-form-label">Price</label>
+            <div class="col-sm-10">
                 <input type="number" id="Price" name="Price" class="form-control" value="@Model?.Price" placeholder="Price" required />
                 <span class="text-danger">@Html.ValidationMessage("Price")</span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="DateOfPurchase" class="control-label col-md-2">Date of Purchase</label>
-            <div class="col-md-10">
-                <input type="date" id="DateOfPurchase" name="DateOfPurchase" class="form-control" placeholder="DateOfPurchase" value="@Model?.DateOfPurchase?.ToString(" yyyy-MM-dd")" required />
+        <div class="mb-3 row">
+            <label for="DateOfPurchase" class="col-sm-2 col-form-label">Date of Purchase</label>
+            <div class="col-sm-10">
+                <input type="date" id="DateOfPurchase" name="DateOfPurchase" class="form-control"
+                       value="@(Model?.DateOfPurchase.HasValue == true ? Model.DateOfPurchase.Value.ToString("yyyy-MM-dd") : "")"
+                       required />
                 <span class="text-danger">@Html.ValidationMessage("DateOfPurchase")</span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="AvailabilityStatus" class="control-label col-md-2">Availability Status</label>
-            <div class="col-md-10">
-                <select class="form-control" name="AvailabilityStatus" id="AvailabilityStatus" required>
-                    <option value="">Please Select ...</option>
+        <div class="mb-3 row">
+            <label for="AvailabilityStatus" class="col-sm-2 col-form-label">Availability Status</label>
+            <div class="col-sm-10">
+                <select class="form-select" name="AvailabilityStatus" id="AvailabilityStatus" required>
+                    <option value="">Please Select...</option>
                     <option value="InStock">InStock</option>
                     <option value="OutStock">OutStock</option>
                 </select>
@@ -50,11 +51,11 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="CategoryID" class="control-label col-md-2">Category</label>
-            <div class="col-md-10">
-                <select id="CategoryID" name="CategoryID" class="form-control" required>
-                    <option value="">Please Select ...</option>
+        <div class="mb-3 row">
+            <label for="CategoryID" class="col-sm-2 col-form-label">Category</label>
+            <div class="col-sm-10">
+                <select id="CategoryID" name="CategoryID" class="form-select" required>
+                    <option value="">Please Select...</option>
                     @foreach (var category in ViewBag.Categories as SelectList)
                     {
                         <option value="@category.Value">@category.Text</option>
@@ -64,11 +65,11 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="BrandID" class="control-label col-md-2">Brand</label>
-            <div class="col-md-10">
-                <select id="BrandID" name="BrandID" class="form-control" required>
-                    <option value="">Please Select ...</option>
+        <div class="mb-3 row">
+            <label for="BrandID" class="col-sm-2 col-form-label">Brand</label>
+            <div class="col-sm-10">
+                <select id="BrandID" name="BrandID" class="form-select" required>
+                    <option value="">Please Select...</option>
                     @foreach (var brand in ViewBag.Brands as SelectList)
                     {
                         <option value="@brand.Value">@brand.Text</option>
@@ -78,26 +79,24 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label class="control-label col-md-2">Active</label>
-            <div class="col-md-10 d-flex">
-                @*Cần thêm value="true" để truyền giá trị true khi checked*@
-                <input type="checkbox" id="Active" name="Active" @(Model?.Active == true ? "checked" : "") value="true" />
-                <span class="text-danger">@Html.ValidationMessage("Active")</span>
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="Active">Active</label>
+            <div class="col-sm-10 d-flex align-items-center">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Active" name="Active" value="true" @(Model?.Active == true ? "checked" : "") />
+                </div>
+                <span class="text-danger ms-3">@Html.ValidationMessage("Active")</span>
             </div>
         </div>
 
-        <div class="form-group my-4">
-            <div class="col-md-offset-2 col-md-10">
+        <div class="mb-4 row">
+            <div class="col-sm-10 offset-sm-2">
                 <button type="submit" class="btn btn-primary">Create</button>
+                <a href="@Url.Action("Index")" class="btn btn-secondary ms-2">Back to List</a>
             </div>
         </div>
     </div>
-</form>
-
-<div>
-    <a href="@Url.Action("Index")">Back to List</a>
-</div>
+}
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

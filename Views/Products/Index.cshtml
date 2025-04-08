@@ -9,12 +9,16 @@
 
 <form action="/products/index"
       class="d-flex flex-row align-items-center flex-wrap" style="display: flex; gap: 10px; align-items:center">
-    <label for="search" class="mx-2 my-1">
+    
+    @Html.Label("Search", new {@class="mx-2 my-1"})
+    @*<label for="search" class="mx-2 my-1">
         Search
-    </label>
+    </label>*@
     <div class="input-group w-auto" style="display: flex ; gap: 10px">
-        <input type="search" name="search" id="search" class="form-control"
-               placeholder="Enter ... to search" value="@ViewBag.Search" />
+        @*<input type="search" name="search" id="search" class="form-control"
+               placeholder="Enter ... to search" value="@ViewBag.Search" />*@
+
+        @Html.TextBox("Search", ViewBag.Search as string, new { @class = "form-control", placeholder = "Enter ... to search" })
 
         <button type="submit" class="btn btn-primary">
             Go
@@ -114,7 +118,8 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @item.DateOfPurchase.Value.ToString("dd/MM/yyyy")
+                @*@item.DateOfPurchase.Value.ToString("dd/MM/yyyy")*@
+                @Html.DisplayFor(modelItem => item.DateOfPurchase)
             </td>
 
             @if (item.AvailabilityStatus == "InStock")
