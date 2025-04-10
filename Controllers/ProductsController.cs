@@ -93,9 +93,16 @@ namespace EFCodeFirst.Controllers
         [HttpPost]
         public ActionResult Create(Product p)
         {
-            db.Products.Add(p);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            //ValidateModel
+            if (ModelState.IsValid) {
+                db.Products.Add(p);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return RedirectToAction("Create");
+            }
         }
 
         public ActionResult Details(long id)

@@ -15,10 +15,17 @@
         <hr />
 
         <div class="mb-3 row">
-            <label for="ProductName" class="col-sm-2 col-form-label">Product Name</label>
+            @* <label for="ProductName" class="col-sm-2 col-form-label">Product Name</label>*@
+            @Html.LabelFor(row => row.ProductName, new { @class = "col-sm-2 col-form-label" })
+
             <div class="col-sm-10">
-                <input type="text" id="ProductName" name="ProductName" class="form-control" placeholder="Product name" required />
-                <span class="text-danger">@Html.ValidationMessage("ProductName")</span>
+                @Html.TextBoxFor(row => row.ProductName, new { @class = "form-control", placeholder = "Product name" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(row => row.ProductName)
+                </span>
+
+                @*<input type="text" id="ProductName" name="ProductName" class="form-control" placeholder="Product name" />
+                    <span class="text-danger">@Html.ValidationMessage(row => row.ProductName)</span>*@
             </div>
         </div>
 
@@ -26,10 +33,10 @@
         <div class="mb-3 row">
             <label for="Price" class="col-sm-2 col-form-label">Price</label>
 
-
             <div class="col-sm-10">
-                <input type="number" id="Price" name="Price" class="form-control" value="@Model?.Price" placeholder="Price" required />
-                <span class="text-danger">@Html.ValidationMessage("Price")</span>
+                @*<input type="number" id="Price" name="Price" class="form-control" value="@Model?.Price" placeholder="Price" />*@
+                @Html.TextBoxFor(row => row.Price, new { @class = "form-control", placeholder = "Price", type="number" })
+                <span class="text-danger">@Html.ValidationMessageFor(row => row.Price)</span>
             </div>
         </div>
 
@@ -37,49 +44,52 @@
             <label for="DateOfPurchase" class="col-sm-2 col-form-label">Date of Purchase</label>
             <div class="col-sm-10">
                 <input type="date" id="DateOfPurchase" name="DateOfPurchase" class="form-control"
-                       value="@(Model?.DateOfPurchase.HasValue == true ? Model.DateOfPurchase.Value.ToString("yyyy-MM-dd") : "")"
-                       required />
-                <span class="text-danger">@Html.ValidationMessage("DateOfPurchase")</span>
+                       value="@(Model?.DateOfPurchase.HasValue == true ? Model.DateOfPurchase.Value.ToString("yyyy-MM-dd") : "")" />
+                <span class="text-danger">@Html.ValidationMessageFor(row => row.DateOfPurchase)</span>
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="AvailabilityStatus" class="col-sm-2 col-form-label">Availability Status</label>
             <div class="col-sm-10">
-                <select class="form-select" name="AvailabilityStatus" id="AvailabilityStatus" required>
+                <select class="form-select" name="AvailabilityStatus" id="AvailabilityStatus">
                     <option value="">Please Select...</option>
                     <option value="InStock">InStock</option>
                     <option value="OutStock">OutStock</option>
                 </select>
-                <span class="text-danger">@Html.ValidationMessage("AvailabilityStatus")</span>
+                <span class="text-danger">@Html.ValidationMessageFor(row => row.AvailabilityStatus)</span>
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="CategoryID" class="col-sm-2 col-form-label">Category</label>
             <div class="col-sm-10">
-                <select id="CategoryID" name="CategoryID" class="form-select" required>
+                @*<select id="CategoryID" name="CategoryID" class="form-select">
                     <option value="">Please Select...</option>
                     @foreach (var category in ViewBag.Categories as SelectList)
                     {
                         <option value="@category.Value">@category.Text</option>
                     }
-                </select>
-                <span class="text-danger">@Html.ValidationMessage("CategoryID")</span>
+                </select>*@
+                @Html.DropDownListFor(row => row.CategoryID, (SelectList)ViewBag.Categories, "Please Select...", new { @class = "form-select" })
+
+                <span class="text-danger">@Html.ValidationMessageFor(row => row.CategoryID)</span>
             </div>
         </div>
 
         <div class="mb-3 row">
             <label for="BrandID" class="col-sm-2 col-form-label">Brand</label>
             <div class="col-sm-10">
-                <select id="BrandID" name="BrandID" class="form-select" required>
+                @*<select id="BrandID" name="BrandID" class="form-select">
                     <option value="">Please Select...</option>
                     @foreach (var brand in ViewBag.Brands as SelectList)
                     {
                         <option value="@brand.Value">@brand.Text</option>
                     }
-                </select>
-                <span class="text-danger">@Html.ValidationMessage("BrandID")</span>
+                </select>*@
+                @Html.DropDownListFor(row => row.BrandID, (SelectList)ViewBag.Brands, "Please Select...", new { @class = "form-select" })
+
+                <span class="text-danger">@Html.ValidationMessageFor(row => row.BrandID)</span>
             </div>
         </div>
 
@@ -100,6 +110,8 @@
             </div>
         </div>
     </div>
+
+    @Html.ValidationSummary()
 }
 
 @section Scripts {
