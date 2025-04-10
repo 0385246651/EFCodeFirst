@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using EFCodeFirst.CustomValidation;
 
 namespace EFCodeFirst.Models
 {
@@ -20,6 +21,7 @@ namespace EFCodeFirst.Models
         [Required(ErrorMessage = "Price cannot be blank@!")]
         [DisplayFormat(DataFormatString = "{0:C}")]
         [Range(0, 100000, ErrorMessage = "Price must be between 0 and 100000@!")]
+        [DivisibleBy100(ErrorMessage= "Price should in multiple 100!")]
         public Nullable<decimal> Price { get; set; }
 
         [Display(Name = "Date  Purchase")]

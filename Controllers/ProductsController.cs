@@ -101,7 +101,13 @@ namespace EFCodeFirst.Controllers
             }
             else
             {
-                return RedirectToAction("Create");
+                //vì Custome validation không có nên cần hiển thị lại view để hiện error
+                // phải bắt buốc gửi dữ liệu đi rồi và thôn tin đó gửi lên ròi . thì mới xử lý(validate) rồi hiển thị lại view
+                List<Category> categories = db.Categories.ToList();
+                List<Brand> brands = db.Brands.ToList();
+                ViewBag.Categories = new SelectList(categories, "CategoryID", "CategoryName");
+                ViewBag.Brands = new SelectList(brands, "BrandID", "BrandName");
+                return View();
             }
         }
 
