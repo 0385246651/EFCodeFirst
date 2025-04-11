@@ -42,7 +42,7 @@ namespace EFCodeFirst.Controllers
                     City = model.City
                 };
                 IdentityResult identityResult = userManager.Create(user);
-                if(identityResult.Succeeded)
+                if (identityResult.Succeeded)
                 {
                     userManager.AddToRole(user.Id, "Customer");
 
@@ -52,13 +52,48 @@ namespace EFCodeFirst.Controllers
 
                     authenManager.SignIn(new AuthenticationProperties(), userIdentity);
                 }
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Account");
             }
             else
             {
                 ModelState.AddModelError("", "Please Enter Username and Password !.");
                 return View();
             }
+        }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(LoginVM model)
+        {
+            var appDbContext = new AppDBContext();
+            var userStore = new AppUserStore(appDbContext);
+            var userManager = new AppUserManager(userStore);
+            var user = userManager.Find(model.UserName, model.Password);
+            if (user != null)
+            {
+                var authenManager = HttpContext.GetOwinContext().Authentication;
+                var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+                authenManager.SignIn(new AuthenticationProperties(), userIdentity);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError("myError", "Invalid Username or Password");
+                return View();
+
+            }
+
+        }
+
+        public ActionResult Logout()
+        {
+            var authenManager = HttpContext.GetOwinContext().Authentication;
+            authenManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            return RedirectToAction("Login", "Account");
         }
     }
 }

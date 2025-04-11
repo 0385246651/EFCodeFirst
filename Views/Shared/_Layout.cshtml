@@ -27,25 +27,40 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Brands", "Index", "Brands", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Categories", "Index", "Categories", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Products", "Index", "Products", new { area = "" }, new { @class = "nav-link" })</li>
+                <ul class="navbar-nav me-auto">
+                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Brands", "Index", "Brands", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Categories", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Products", "Index", "Products", null, new { @class = "nav-link" })</li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link text-danger">Hello @User.Identity.Name</span>
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Logout", "Logout", "Account", null, new { @class = "nav-link btn btn-outline-warning ms-2" })
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link btn btn-outline-success me-2" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link btn btn-outline-primary" })
+                        </li>
+                    }
                 </ul>
             </div>
-        </div>
 
-        @if (User.Identity.IsAuthenticated)
-        {
-            <div style="color: red; font-weight: bold; margin-right: 50px">
-                Hello @User.Identity.Name
-            </div>
-        }
+        </div>
     </nav>
-    
+
     <div class="container body-content">
         @RenderBody()
         <hr />

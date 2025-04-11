@@ -1,0 +1,42 @@
+﻿@model EFCodeFirst.ViewModel.LoginVM
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div class="row w-25 mx-auto">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "UserName" })
+            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger", placeholder = "UserName" })
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row w-25 mx-auto">
+        <div class="col-md-12">
+            @*@Html.LabelFor(m => m.RememberMe)
+                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input" })
+                @Html.ValidationMessageFor(m => m.RememberMe, "", new { @class = "text-danger" })*@
+
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-secondary  mt-4">
+                Login
+            </button>
+        </div>
+    </div>
+}
