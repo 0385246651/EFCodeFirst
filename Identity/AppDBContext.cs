@@ -15,5 +15,7 @@ namespace EFCodeFirst.Identity
         {
             return new AppDBContext();
         }
+
+        //public System.Data.Entity.DbSet<EFCodeFirst.Identity.AppUser> AppUsers { get; set; }
     }
 }

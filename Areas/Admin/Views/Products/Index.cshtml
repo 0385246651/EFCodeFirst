@@ -48,7 +48,7 @@
 <table class="table">
     <tr>
         <th class="">
-            <a href="/admin/products/index?SortColumn=ProductID&IconClass=@iconClass&page=1">
+            <a href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=ProductID&IconClass=@iconClass&page=1">
                 @Html.DisplayNameFor(model => model.ProductID)
                 @*<br/>*@
                 @if (ViewBag.SortColumn == "ProductID")
@@ -58,7 +58,7 @@
             </a>
         </th>
         <th>
-            <a href="/admin/products/index?SortColumn=ProductName&IconClass=@iconClass&page=1">
+            <a href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=ProductName&IconClass=@iconClass&page=1">
                 @Html.DisplayNameFor(model => model.ProductName)
             </a>
             <br />
@@ -68,7 +68,7 @@
             }
         </th>
         <th>
-            <a href="/products/index?SortColumn=Price&IconClass=@iconClass&page=1">
+            <a href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=Price&IconClass=@iconClass&page=1">
                 @Html.DisplayNameFor(model => model.Price)
             </a>
             <br />
@@ -78,7 +78,7 @@
             }
         </th>
         <th>
-            <a href="/admin/products/index?SortColumn=DateOfPurchase&IconClass=@iconClass&page=1">
+            <a href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=DateOfPurchase&IconClass=@iconClass&page=1">
                 @Html.DisplayNameFor(model => model.DateOfPurchase)
             </a>
             <br />
@@ -175,7 +175,7 @@
 
             <ul class="pagination justify-content-center">
                 <li class="page-item ">
-                    <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@PreviousPage">
+                    <a class="page-link" href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@PreviousPage">
                         Previous
                     </a>
                 </li>
@@ -185,7 +185,7 @@
                     if (i + 1 == ViewBag.Page)
                     {
                         <li class="page-item active">
-                            <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
+                            <a class="page-link" href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
                                 @(i+1)
                             </a>
                         </li>
@@ -193,7 +193,7 @@
                     else
                     {
                         <li class="page-item">
-                            <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
+                            <a class="page-link" href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
                                 @(i+1)
                             </a>
                         </li>
@@ -202,7 +202,7 @@
                 }
 
                 <li class="page-item active">
-                    <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@NextPage">
+                    <a class="page-link" href="/admin/products/index?search=@HttpUtility.UrlEncode(ViewBag.Search)&SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@NextPage">
                         Next
                     </a>
                 </li>

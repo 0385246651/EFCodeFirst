@@ -1,0 +1,45 @@
+﻿@model List<EFCodeFirst.Identity.AppUser>
+@{
+    ViewBag.Title = "Users";
+}
+
+
+<h2>User List</h2>
+
+
+@Html.ActionLink("Create New", "Create", "Users", new { area = "Admin" }, new { @class = "btn btn-primary btn-sm my-4" })
+
+<table class="table table-bordered">
+    <tr>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Date of Birth</th>
+        <th>City</th>
+        <th style="width: 200px;">Actions</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.Birthday)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.City)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-warning btn-sm mx-1" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
+    }
+</table>

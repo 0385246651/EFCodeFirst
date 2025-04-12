@@ -17,6 +17,8 @@ namespace EFCodeFirst
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                //khi có area thì phải thêm vào để phân biệt đây là link mặc định trỏ vào đâu
+                , namespaces: new[] { "EFCodeFirst.Controllers" }
             );
         }
     }

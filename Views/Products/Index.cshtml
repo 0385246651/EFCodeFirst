@@ -1,0 +1,34 @@
+﻿@model IEnumerable<EFCodeFirst.Models.Product>
+@{
+    ViewBag.Title = "Product List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Products</h2>
+
+<div class="row row-cols-1 row-cols-5 g-4">
+    @foreach(var item in Model)
+            {
+               <div class="col">
+                   <div class="card">
+                       <img src="https://picsum.photos/200" alt="@item.ProductName" class="card-img-top"/>
+                       <div class="card-body">
+                           <h5 class="card-title">
+                               @item.ProductName
+                           </h5>
+                           <p class="card-text">
+                               @item.Price
+                           </p>
+                           <p class="card-text">
+                               <small class="text-muted">@item.Category.CategoryName</small>
+                           </p>
+                           <p class="card-text">
+                               <small class="text-muted">
+                                   @item.Brand.BrandName
+                               </small>
+                           </p>
+                       </div>
+                   </div>
+               </div>
+            }
+</div>

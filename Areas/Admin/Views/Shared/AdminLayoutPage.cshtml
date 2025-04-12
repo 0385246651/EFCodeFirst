@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="~/Content/font-awesome.css" rel="stylesheet"></link>
+    <link href="~/Content/font-awesome.css" rel="stylesheet"/>
     <script src="~/Scripts/jquery-3.6.0.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
 
@@ -31,19 +31,28 @@
                     <li>@Html.ActionLink("Brands", "Index", "Brands", new { area = "Admin" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Categories", "Index", "Categories", new { area = "Admin" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Products", "Index", "Products", new { area = "Admin" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Users", "Index", "Users", new { area = "Admin" }, new { @class = "nav-link" })</li>
                 </ul>
 
                 <ul class="navbar-nav ms-auto">
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
-                            <span class="nav-link text-danger">Hello @User.Identity.Name</span>
+                            <span class="nav-link text-danger">
+                                Hello @User.Identity.Name &nbsp;  @if (User.IsInRole("Admin"))
+                                {
+                                    @*<i class="fa fa-crown text-warning ms-1" title="Admin"></i>*@
+                                    <i class="fa fa-star" style="color: yellow"></i>
+                                }
+                            </span>
+                           
+                        </li>
+                        
+                        <li class="nav-item">
+                            @Html.ActionLink("MyProfile", "MyProfile", "Account", new { area = "" }, new { @class = "nav-link btn btn-outline-warning ms-2" })
                         </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Profile", "Profile", "Account", null, new { @class = "nav-link btn btn-outline-warning ms-2" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Logout", "Logout", "Account", null, new { @class = "nav-link btn btn-outline-warning ms-2" })
+                            @Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new { @class = "nav-link btn btn-outline-warning ms-2" })
                         </li>
                     }
                 </ul>

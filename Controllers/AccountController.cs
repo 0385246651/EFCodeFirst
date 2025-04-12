@@ -78,6 +78,10 @@ namespace EFCodeFirst.Controllers
                 var authenManager = HttpContext.GetOwinContext().Authentication;
                 var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
                 authenManager.SignIn(new AuthenticationProperties(), userIdentity);
+               if(userManager.IsInRole(user.Id, "Admin"))
+                {
+                    return RedirectToAction("Index", "Home", new {area = "Admin"});
+                }
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -93,10 +97,10 @@ namespace EFCodeFirst.Controllers
         {
             var authenManager = HttpContext.GetOwinContext().Authentication;
             authenManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Index", "Home");
         }
 
-        public ActionResult Profile()
+        public ActionResult MyProfile()
         {
             var appDbContext = new AppDBContext();
             var userStore = new AppUserStore(appDbContext);

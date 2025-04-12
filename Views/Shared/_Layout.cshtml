@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="~/Content/font-awesome.css" rel="stylesheet"></link>
+    <link href="~/Content/font-awesome.css" rel="stylesheet"/>
     <script src="~/Scripts/jquery-3.6.0.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
 
@@ -31,9 +31,8 @@
                     <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Brands", "Index", "Brands", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Categories", "Index", "Categories", null, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Products", "Index", "Products", null, new { @class = "nav-link" })</li>
+
                 </ul>
 
                 <ul class="navbar-nav ms-auto">
@@ -43,7 +42,7 @@
                             <span class="nav-link text-danger">Hello @User.Identity.Name</span>
                         </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Profile", "Profile", "Account", null, new { @class = "nav-link btn btn-outline-warning ms-2" })
+                            @Html.ActionLink("MyProfile", "MyProfile", "Account", null, new { @class = "nav-link btn btn-outline-warning ms-2" })
                         </li>
                         <li class="nav-item">
                             @Html.ActionLink("Logout", "Logout", "Account", null, new { @class = "nav-link btn btn-outline-warning ms-2" })
@@ -55,7 +54,7 @@
                             @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link btn btn-outline-success me-2" })
                         </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link btn btn-outline-primary" })
+                            @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link btn btn-outline-success me-2" })
                         </li>
                     }
                 </ul>
