@@ -1,0 +1,53 @@
+﻿@model EFCodeFirst.ViewModel.RegisterVM
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Profile</h2>
+
+<section>
+    <div class="my-4 row">
+        <div class="">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.UserName)
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "UserName", @readonly = "readonly" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email", @readonly = "readonly" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.Mobile)
+            @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", placeholder = "Mobile", @readonly = "readonly" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.DateOfBirth)
+            @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control", placeholder = "DateOfBirth", type = "date", @readonly = "readonly" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.Address)
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control", placeholder = "Address", @readonly = "readonly" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.City)
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control", placeholder = "City", @readonly = "readonly" })
+        </div>
+    </div>
+
+</section>
+

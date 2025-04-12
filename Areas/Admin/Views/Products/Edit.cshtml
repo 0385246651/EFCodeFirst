@@ -2,12 +2,11 @@
 
 @{
     ViewBag.Title = "Edit";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2 class="mt-2">Edit</h2>
 
-<form action="/products/edit/@Model.ProductID" method="post">
+<form action="Admin/products/edit/@Model.ProductID" method="post">
     @Html.AntiForgeryToken()
 
     <input hidden value="@Model.ProductID" name="ProductID" />

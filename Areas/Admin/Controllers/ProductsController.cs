@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using EFCodeFirst.Models;
 using static System.Data.Entity.Infrastructure.Design.Executor;
 
-namespace EFCodeFirst.Controllers
+namespace EFCodeFirst.Areas.Admin.Controllers
 {
     public class ProductsController : Controller
     {

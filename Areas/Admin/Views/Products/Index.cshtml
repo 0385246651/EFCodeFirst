@@ -2,12 +2,10 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <h2 class="mt-2">Products</h2>
 
-<form action="/products/index"
+<form action="/admin/products/index"
       class="d-flex flex-row align-items-center flex-wrap" style="display: flex; gap: 10px; align-items:center">
 
     @Html.Label("Search", new { @class = "mx-2 my-1" })
@@ -50,7 +48,7 @@
 <table class="table">
     <tr>
         <th class="">
-            <a href="/products/index?SortColumn=ProductID&IconClass=@iconClass&page=1">
+            <a href="/admin/products/index?SortColumn=ProductID&IconClass=@iconClass&page=1">
                 @Html.DisplayNameFor(model => model.ProductID)
                 @*<br/>*@
                 @if (ViewBag.SortColumn == "ProductID")
@@ -60,7 +58,7 @@
             </a>
         </th>
         <th>
-            <a href="/products/index?SortColumn=ProductName&IconClass=@iconClass&page=1">
+            <a href="/admin/products/index?SortColumn=ProductName&IconClass=@iconClass&page=1">
                 @Html.DisplayNameFor(model => model.ProductName)
             </a>
             <br />
@@ -80,7 +78,7 @@
             }
         </th>
         <th>
-            <a href="/products/index?SortColumn=DateOfPurchase&IconClass=@iconClass&page=1">
+            <a href="/admin/products/index?SortColumn=DateOfPurchase&IconClass=@iconClass&page=1">
                 @Html.DisplayNameFor(model => model.DateOfPurchase)
             </a>
             <br />
@@ -177,7 +175,7 @@
 
             <ul class="pagination justify-content-center">
                 <li class="page-item ">
-                    <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@PreviousPage">
+                    <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@PreviousPage">
                         Previous
                     </a>
                 </li>
@@ -187,7 +185,7 @@
                     if (i + 1 == ViewBag.Page)
                     {
                         <li class="page-item active">
-                            <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
+                            <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
                                 @(i+1)
                             </a>
                         </li>
@@ -195,7 +193,7 @@
                     else
                     {
                         <li class="page-item">
-                            <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
+                            <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@(i+1)">
                                 @(i+1)
                             </a>
                         </li>
@@ -204,7 +202,7 @@
                 }
 
                 <li class="page-item active">
-                    <a class="page-link" href="/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@NextPage">
+                    <a class="page-link" href="/admin/products/index?SortColumn=@ViewBag.SortColumn&IconClass=@ViewBag.IconClass&page=@NextPage">
                         Next
                     </a>
                 </li>
@@ -215,7 +213,7 @@
 
 <script>
     document.getElementById("clearSearch").addEventListener("click", function () {
-        window.location.href = "/products/index"; // Redirect để reset ViewBag
+        window.location.href = "/admin/products/index"; // Redirect để reset ViewBag
     });
 
     function confirmDelete(url, name) {

@@ -7,7 +7,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.AspNet.Identity.EntityFramework;
 using EFCodeFirst.Identity;
+using System.Collections.Generic;
 
+//khi chạy project sẽ chạy file này 
 [assembly: OwinStartup(typeof(EFCodeFirst.Startup))]
 
 namespace EFCodeFirst
@@ -16,6 +18,7 @@ namespace EFCodeFirst
     {
         public void Configuration(IAppBuilder app)
         {
+            //cơ chế xác thực cookie nếu chưa login thì chueyern về login page
             app.UseCookieAuthentication(new CookieAuthenticationOptions()
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
@@ -26,12 +29,15 @@ namespace EFCodeFirst
 
         public void CreateRolesAddUsers()
         {
+            //QUản lý các role
             var roleManager = new RoleManager<IdentityRole>(
             new RoleStore<IdentityRole>(new AppDBContext()));
             var appDbContext = new AppDBContext();
             var appUserStore = new AppUserStore(appDbContext);
+            //Dùng để tạo và quản lý người dùng với database đang dùng(EF Code First)
             var userManager = new AppUserManager(appUserStore);
 
+            //tạo role admin nếu chưa tồn tại
             if (!roleManager.RoleExists("Admin"))
             {
                 var role = new IdentityRole();

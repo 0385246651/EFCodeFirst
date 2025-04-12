@@ -21,19 +21,16 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @Html.ActionLink("Company", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Admin", "Index", "Home", new { area = "Admin" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav me-auto">
-                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Brands", "Index", "Brands", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Categories", "Index", "Categories", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Products", "Index", "Products", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Brands", "Index", "Brands", new { area = "Admin" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Categories", "Index", "Categories", new { area = "Admin" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Products", "Index", "Products", new { area = "Admin" }, new { @class = "nav-link" })</li>
                 </ul>
 
                 <ul class="navbar-nav ms-auto">
@@ -47,15 +44,6 @@
                         </li>
                         <li class="nav-item">
                             @Html.ActionLink("Logout", "Logout", "Account", null, new { @class = "nav-link btn btn-outline-warning ms-2" })
-                        </li>
-                    }
-                    else
-                    {
-                        <li class="nav-item">
-                            @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link btn btn-outline-success me-2" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link btn btn-outline-primary" })
                         </li>
                     }
                 </ul>

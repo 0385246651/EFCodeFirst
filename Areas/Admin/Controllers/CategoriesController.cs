@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using EFCodeFirst.Models;
 
-namespace EFCodeFirst.Controllers
+namespace EFCodeFirst.Areas.Admin.Controllers
 {
     public class CategoriesController : Controller
     {

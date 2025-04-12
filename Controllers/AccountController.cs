@@ -95,5 +95,28 @@ namespace EFCodeFirst.Controllers
             authenManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
             return RedirectToAction("Login", "Account");
         }
+
+        public ActionResult Profile()
+        {
+            var appDbContext = new AppDBContext();
+            var userStore = new AppUserStore(appDbContext);
+            var userManager = new AppUserManager(userStore);
+            var userId = User.Identity.GetUserId();
+            var user = userManager.FindById(userId);
+            if (user != null)
+            {
+                var model = new RegisterVM()
+                {
+                    UserName = user.UserName,
+                    Email = user.Email,
+                    Mobile = user.PhoneNumber,
+                    DateOfBirth = user.Birthday ?? DateTime.Now,
+                    Address = user.Address,
+                    City = user.City
+                };
+                return View(model);
+            }
+            return RedirectToAction("Login", "Account");
+        }
     }
 }

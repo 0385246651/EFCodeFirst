@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using EFCodeFirst.Models;
 
-namespace EFCodeFirst.Controllers
+namespace EFCodeFirst.Areas.Admin.Controllers
 {
     public class BrandsController : Controller
     {
@@ -56,7 +56,7 @@ namespace EFCodeFirst.Controllers
 
         public ActionResult Delete(long id)
         {
-            Brand brand =  db.Brands.FirstOrDefault(b => b.BrandID == id);
+            Brand brand = db.Brands.FirstOrDefault(b => b.BrandID == id);
             db.Brands.Remove(brand);
             db.SaveChanges();
             return RedirectToAction("Index");
