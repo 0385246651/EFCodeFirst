@@ -4,9 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using EFCodeFirst.Models;
+using EFCodeFirst.FIlters;
 
 namespace EFCodeFirst.Controllers
 {
+    [MyAuthenFilter]
     public class ProductsController : Controller
     {
         // GET: Products

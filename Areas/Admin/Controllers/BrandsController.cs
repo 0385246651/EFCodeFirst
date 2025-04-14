@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using EFCodeFirst.FIlters;
 using EFCodeFirst.Models;
 
 namespace EFCodeFirst.Areas.Admin.Controllers
 {
+    [AdminAuthorization]
     public class BrandsController : Controller
     {
         CompanyDBContext db = new CompanyDBContext();

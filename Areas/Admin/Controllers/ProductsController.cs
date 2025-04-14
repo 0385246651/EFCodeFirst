@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using EFCodeFirst.FIlters;
 using EFCodeFirst.Models;
 using static System.Data.Entity.Infrastructure.Design.Executor;
 
 namespace EFCodeFirst.Areas.Admin.Controllers
 {
+    [AdminAuthorization]
     public class ProductsController : Controller
     {
         CompanyDBContext db = new CompanyDBContext();
