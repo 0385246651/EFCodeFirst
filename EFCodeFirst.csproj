@@ -167,6 +167,7 @@
     <Compile Include="FIlters\AdminAuthorization.cs" />
     <Compile Include="FIlters\MyActionFilter.cs" />
     <Compile Include="FIlters\MyAuthenFilter.cs" />
+    <Compile Include="FIlters\MyExceptionFilter.cs" />
     <Compile Include="FIlters\MyResultFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -277,7 +278,6 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
@@ -298,6 +298,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\MyProfile.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Home\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="IdentityMigration\202504100418233_init.resx">

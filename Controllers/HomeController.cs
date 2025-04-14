@@ -36,5 +36,10 @@ namespace EFCodeFirst.Controllers
 
             return View();
         }
+        public ActionResult Error()
+        {
+            ViewBag.Message = "Error page.";
+            return View();
+        }
     }
 }
