@@ -9,13 +9,12 @@ using EFCodeFirst.FIlters;
 namespace EFCodeFirst.Controllers
 {
     [MyAuthenFilter]
-    [MyExceptionFilter]
+    //[MyExceptionFilter]
     public class ProductsController : Controller
     {
         // GET: Products
         public ActionResult Index()
         {
-            throw new Exception("Error in ProductsController");
             CompanyDBContext db = new CompanyDBContext();
             List<Product> products = db.Products.ToList();
 

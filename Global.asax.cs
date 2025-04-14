@@ -12,6 +12,7 @@ namespace EFCodeFirst
     {
         protected void Application_Start()
         {
+            // thêm các config cần thiết cho ứng dụng
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

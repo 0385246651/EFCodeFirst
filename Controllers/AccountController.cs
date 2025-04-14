@@ -17,6 +17,7 @@ namespace EFCodeFirst.Controllers
         // GET: Account
         public ActionResult Register()
         {
+            //throw new Exception("Error - Cannot register right now!");
             return View();
         }
 

@@ -25,13 +25,18 @@ namespace EFCodeFirst.Controllers
 
         public ActionResult About()
         {
+            throw new Exception("Error in About !!!!");
+
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
+        //ignore the exception filter for this action
+        //[OverrideExceptionFilters]
         public ActionResult Contact()
         {
+            throw new Exception("Error in Contact !!!!");
             ViewBag.Message = "Your contact page.";
 
             return View();
