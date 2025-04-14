@@ -165,7 +165,9 @@
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="CustomValidation\DivisibleBy100.cs" />
     <Compile Include="FIlters\AdminAuthorization.cs" />
+    <Compile Include="FIlters\MyActionFilter.cs" />
     <Compile Include="FIlters\MyAuthenFilter.cs" />
+    <Compile Include="FIlters\MyResultFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
