@@ -38,3 +38,338 @@ Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name
 Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
 Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
 Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Error - Cannot login right now!
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Object reference not set to an instance of an object.
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: Error - Cannot login right now!
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\EFCodeFirst\Views\Shared\Error.cshtml(14): error CS1061: 'HandleErrorAttribute' does not contain a definition for 'ActionName' and no accessible extension method 'ActionName' accepting a first argument of type 'HandleErrorAttribute' could be found (are you missing a using directive or an assembly reference?)
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!
+Message: Error - Cannot login right now!

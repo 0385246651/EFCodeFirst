@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HandleErrorInfo
+@{
     ViewBag.Title = "Error";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -8,6 +9,16 @@
 <p>
     An error occurred while processing your request.
 </p>
+
+<h5>
+    Action: @Model.ActionName <br />
+</h5>
+<h5>
+    Controller: @Model.ControllerName <br />
+</h5>
+<h5>
+    Exception: @Model.Exception.Message <br />
+</h5>
 
 
 

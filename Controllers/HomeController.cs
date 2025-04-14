@@ -25,7 +25,7 @@ namespace EFCodeFirst.Controllers
 
         public ActionResult About()
         {
-            throw new Exception("Error in About !!!!");
+            //throw new Exception("Error in About !!!!");
 
             ViewBag.Message = "Your application description page.";
 

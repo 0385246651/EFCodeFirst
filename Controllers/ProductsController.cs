@@ -12,7 +12,7 @@ namespace EFCodeFirst.Controllers
     public class ProductsController : Controller
     {
         [MyAuthenFilter]
-        //[MyExceptionFilter]
+        [MyExceptionFilter]
         // GET: Products
         public ActionResult Index()
         {

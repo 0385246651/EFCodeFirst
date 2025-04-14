@@ -299,6 +299,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\MyProfile.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>

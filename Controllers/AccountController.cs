@@ -60,6 +60,7 @@ namespace EFCodeFirst.Controllers
 
         public ActionResult Login()
         {
+            //throw new Exception("Error - Cannot login right now!");
             return View();
         }
 
@@ -83,9 +84,7 @@ namespace EFCodeFirst.Controllers
             {
                 ModelState.AddModelError("myError", "Invalid Username or Password");
                 return View();
-
             }
-
         }
 
         //Built in Filter Quy đinh đây ko phải là action mà chỉ là method
