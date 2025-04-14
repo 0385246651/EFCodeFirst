@@ -8,10 +8,11 @@ using EFCodeFirst.FIlters;
 
 namespace EFCodeFirst.Controllers
 {
-    [MyAuthenFilter]
-    //[MyExceptionFilter]
+    
     public class ProductsController : Controller
     {
+        [MyAuthenFilter]
+        //[MyExceptionFilter]
         // GET: Products
         public ActionResult Index()
         {
@@ -19,6 +20,13 @@ namespace EFCodeFirst.Controllers
             List<Product> products = db.Products.ToList();
 
             return View(products);
+        }
+
+        // Chỉ đc gọi thông qua view chứ ko đc gọi trực tiếp là 1 Action
+        [ChildActionOnly]
+        public ActionResult DisplaySingleProduct(Product p)
+        {
+            return PartialView("Myproduct", p);
         }
     }
 }

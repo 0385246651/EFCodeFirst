@@ -36,7 +36,7 @@ namespace EFCodeFirst.Controllers
         //[OverrideExceptionFilters]
         public ActionResult Contact()
         {
-            throw new Exception("Error in Contact !!!!");
+            //throw new Exception("Error in Contact !!!!");
             ViewBag.Message = "Your contact page.";
 
             return View();

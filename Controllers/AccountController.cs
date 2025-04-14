@@ -47,11 +47,7 @@ namespace EFCodeFirst.Controllers
                 {
                     userManager.AddToRole(user.Id, "Customer");
 
-                    var authenManager = HttpContext.GetOwinContext().Authentication;
-
-                    var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-
-                    authenManager.SignIn(new AuthenticationProperties(), userIdentity);
+                    this.LoginUser(userManager, user);
                 }
                 return RedirectToAction("Login", "Account");
             }
@@ -76,10 +72,8 @@ namespace EFCodeFirst.Controllers
             var user = userManager.Find(model.UserName, model.Password);
             if (user != null)
             {
-                var authenManager = HttpContext.GetOwinContext().Authentication;
-                var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-                authenManager.SignIn(new AuthenticationProperties(), userIdentity);
-               if(userManager.IsInRole(user.Id, "Admin"))
+                this.LoginUser(userManager, user);
+                if (userManager.IsInRole(user.Id, "Admin"))
                 {
                     return RedirectToAction("Index", "Home", new {area = "Admin"});
                 }
@@ -92,6 +86,15 @@ namespace EFCodeFirst.Controllers
 
             }
 
+        }
+
+        //Built in Filter Quy đinh đây ko phải là action mà chỉ là method
+        [NonAction]
+        public void LoginUser(AppUserManager userManager, AppUser user)
+        {
+            var authenManager = HttpContext.GetOwinContext().Authentication;
+            var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+            authenManager.SignIn(new AuthenticationProperties(), userIdentity);
         }
 
         public ActionResult Logout()

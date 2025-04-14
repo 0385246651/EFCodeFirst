@@ -13,3 +13,28 @@ Message: Error - Cannot register right now!
 Message: Error - Cannot register right now!
 Message: Error in About !!!!
 Message: Error in About !!!!
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: Error in About !!!!
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+Message: D:\EFCodeFirst\Views\Shared\Myproduct.cshtml(6): error CS0103: The name 'item' does not exist in the current context
+Message: Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
