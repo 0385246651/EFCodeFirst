@@ -301,6 +301,8 @@
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
+    <Content Include="Views\Home\Temp3.cshtml" />
+    <Content Include="Views\Home\Temp2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="IdentityMigration\202504100418233_init.resx">

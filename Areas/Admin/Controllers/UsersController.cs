@@ -44,5 +44,40 @@ namespace EFCodeFirst.Areas.Admin.Controllers
             }
             return View(model);
         }
+
+        public ActionResult Edit(string id)
+        {
+            AppDBContext db = new AppDBContext();
+            var user = db.Users.Find(id);
+            return View(user);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(AppUser model)
+        {
+            if (ModelState.IsValid)
+            {
+                AppDBContext db = new AppDBContext();
+                var user = db.Users.Find(model.Id);
+                user.UserName = model.UserName;
+                user.Email = model.Email;
+                user.City = model.City;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(model);
+        }
+
+        public ActionResult DeleteUser(string id)
+        {
+            AppDBContext db = new AppDBContext();
+            var user = db.Users.Find(id);
+            if (user != null)
+            {
+                db.Users.Remove(user);
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
 
 namespace EFCodeFirst.Controllers
 {
@@ -44,6 +45,48 @@ namespace EFCodeFirst.Controllers
         public ActionResult Error()
         {
             ViewBag.Message = "Error page.";
+            return View();
+        }
+
+        public ActionResult Temp1()
+        {
+            // TempData là một Dictionary (kiểu TempDataDictionary)
+            // dùng để truyền dữ liệu tạm thời giữa các Action hoặc
+            // giữa các Request (như từ Controller này sang View
+            // hoặc từ Controller này sang Controller khác qua redirect).
+
+            //Ví dụ thường gặp: ✅ Thông báo "Thêm sản phẩm thành công",
+            //"Xóa thất bại" sau khi redirect.
+            TempData["Message"] = "Helllo Friends";
+            return RedirectToAction("Temp2");
+        }
+
+        public ActionResult Temp2()
+        {
+            // ĐỌC DỮ LIỆU TỪ TempData đánh dấu là đã đọc
+            //string mess = Convert.ToString(TempData["Message"]);
+            //RediretToAction thì vẫn còn tempdata chỉ đánh dấu đã đọc
+            //return RedirectToAction("Temp3");
+
+            // return view có link đến temp3
+            //nếu mà bên trên đọc tempdata thì temp3 sẽ bị mất
+            //vì return view ,content json
+
+            //vẫn muốn giữ ở temp 3 dùng TempData.Kepp()
+            //TempData.Keep("Message");
+
+            //hoặc dùng TempData.Peek() 
+            // vừa lấy ra dữ liệu vừa giữ lại sau return view
+            string mess = Convert.ToString(TempData.Peek("Message");
+
+            return View();
+        }
+
+        public ActionResult Temp3()
+        {
+            // sẽ xóa tempdata sau khi view đc render
+            string mess = Convert.ToString(TempData["Message"]);
+            ViewBag.mess = mess;
             return View();
         }
     }
