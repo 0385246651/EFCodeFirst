@@ -77,7 +77,7 @@ namespace EFCodeFirst.Controllers
 
             //hoặc dùng TempData.Peek() 
             // vừa lấy ra dữ liệu vừa giữ lại sau return view
-            string mess = Convert.ToString(TempData.Peek("Message");
+            string mess = Convert.ToString(TempData.Peek("Message"));
 
             return View();
         }
