@@ -1,0 +1,34 @@
+﻿@model List<EFCodeFirst.Models.Brand>
+
+@{
+    ViewBag.Title = "EditBrands";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EditBrands</h2>
+
+@using (Html.BeginForm("EditBrands", "Home", FormMethod.Post))
+{
+    <table class="table">
+        <tr>
+            <th>Brand ID</th>
+            <th>Brand Name</th>
+        </tr>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>
+                    @Html.TextBoxFor(m => Model[i].BrandID, new { @class = "form-control", @readonly = "readonly" })
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => Model[i].BrandName, new { @class = "form-control"})
+                </td>
+            </tr>
+        }
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </td>
+    </table>
+}

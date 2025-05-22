@@ -9,7 +9,8 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+<table class="table brandTable table-bordered">
     <tr>
         <th>
             BrandID
@@ -20,20 +21,320 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @item.BrandID
-        </td>
-        <td>
-            @item.BrandName
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.BrandID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.BrandID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.BrandID })
-        </td>
-    </tr>
-}
+    
+
+    @*@foreach (var item in Model) {
+            <tr>
+                <td>
+                    @item.BrandID
+                </td>
+                <td>
+                    @item.BrandName
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BrandID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.BrandID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BrandID })
+                </td>
+            </tr>
+        }*@
 
 </table>
+<div class="modal" id="staticBackdrop" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">View Brand</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class=" ">
+                    <tr>
+                        <td>
+                            Brand ID:
+                        </td>
+                        <td>
+                            <span id="BrandIDSpan"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Brand Name:
+                        </td>
+                        <td>
+                            <span id="BrandNameSpan"></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Delete Brand</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Are you sure delete this brand?</h5>
+
+                <table class="table">
+                    <tr>
+                        <td>BrandID</td>
+                        <td><span id="DeleteBrandIDSpan"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>BrandName</td>
+                        <td><span id="DeleteBrandNameSpan"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btnDelete">Yes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<div class="card-group">
+    <div class="card mt-4">
+        <div class="card-header">
+            Add New Brand
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="col-12">
+                    <label for="BrandName">
+                        Brand Name
+                    </label>
+                    <input type="text" name="BrandName" class="form-control"
+                           placeholder="Enter Brand Name" id="txtBrandName" />
+                </div>
+                <div class="card-footer">
+                    <button type="submit" id="btnInsert" class="btn btn-info">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="card mt-4">
+        <div class="card-header">
+            Update Brand
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="col-12">
+                    <label for="BrandName">
+                        Brand ID
+                    </label>
+                    <input type="text" name="BrandIDUpdate" class="form-control"
+                           placeholder="BrandID" id="txtBrandIDUpdate" disabled="disabled" />
+                </div>
+                <div class="col-12">
+                    <label for="BrandName">
+                        Brand Name
+                    </label>
+                    <input type="text" name="BrandNameUpdate" class="form-control"
+                           placeholder="Enter Brand Name" id="txtBrandNameUpdate" />
+                </div>
+                <div class="card-footer">
+                    <button type="submit" id="btnUpdate" class="btn btn-info">
+                        Update
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        // Initialize DataTable
+        $.ajax({
+            url: '/api/brands',
+            type: 'GET',
+            success: function (responses) {
+                for (var i = 0; i < responses.length; i++) {
+                    var brand = responses[i];
+                    var row = '<tr>' +
+                        '<td>' + brand.BrandID + '</td>' +
+                        '<td>' + brand.BrandName + '</td>' +
+                        '<td  class="d-flex gap-2">' +
+                        '<button type="button" class="btn btn-primary btnViewBrand" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-brandid="' + brand.BrandID + '">Detail</button>'
+                        +
+                        '<button type="button" class="btn btn-primary btnUpdateBrand"  data-brandid="' + brand.BrandID + '">Edit</button>'
+                        +
+                        '<button type="button" class="btn btn-primary btnDeleteBrand" data-bs-toggle="modal" data-bs-target="#deleteModal" data-brandid="' + brand.BrandID + '">Delete</button>'
+                        +
+                        '</td>' +
+                        '</tr>';
+                    $('.brandTable').append(row);
+                }
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    });
+
+    $(document).on('click', '.btnViewBrand', function () {
+        const brid = $(event.target).attr('data-brandid');
+        $.ajax({
+            url: '/api/brands/' + brid,
+            type: 'GET',
+            success: function (response) {
+                $('#BrandIDSpan').html(response.BrandID);
+                $('#BrandNameSpan').html(response.BrandName);
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    });
+
+    //insert
+    $('#btnInsert').click(() => {
+        const brandName = $('#txtBrandName').val();
+        $.ajax({
+            url: '/api/brands',
+            type: 'POST',
+            data: { 'BrandName': brandName },
+            success: (response) => {
+                // Tạo dòng mới và append vào bảng
+                const row = '<tr>' +
+                    '<td>' + response.BrandID + '</td>' +
+                    '<td>' + response.BrandName + '</td>' +
+                    '<td>' +
+                    '<button type="button" class="btn btn-primary btnViewBrand" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-brandid="' + newBrand.BrandID + '">Detail</button>' +
+                    '</td>' +
+                    '<td>' +
+                    '<button type="button" class="btn btn-primary btnUpdateBrand"  data-brandid="' + brand.BrandID + '">Edit</button>'
+                    +
+                    '<a href="/admin/Brands/Delete/' + response.BrandID + '">Delete</a>' +
+                    '</td>' +
+                    '</tr>';
+
+                $('.brandTable').append(row);
+
+                // Reset input
+                $('#txtBrandName').val('');
+
+                alert("✅ Thêm thành công!");
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    });
+
+    //update
+    $('#btnUpdate').click(() => {
+        const brandID = $('#txtBrandIDUpdate').val();
+        const brandName = $('#txtBrandNameUpdate').val();
+        $.ajax({
+            url: '/api/brands',
+            type: 'PUT',
+            data: { BrandID: brandID, 'BrandName': brandName },
+            success: (response) => {
+                // Tìm hàng cần update theo BrandID
+                const rowToUpdate = $('.brandTable tr').filter(function () {
+                    return $(this).find('td:first').text().trim() === brandID;
+                });
+
+                // Thay đổi nội dung hàng
+                if (rowToUpdate.length > 0) {
+                    const newRow = '<tr>' +
+                        '<td>' + response.BrandID + '</td>' +
+                        '<td>' + response.BrandName + '</td>' +
+                        '<td>' +
+                        '<button type="button" class="btn btn-primary btnViewBrand" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-brandid="' + response.BrandID + '">Detail</button>' +
+                        '</td>' +
+                        '<td>' +
+                        '<button type="button" class="btn btn-primary btnUpdateBrand"  data-brandid="' + brand.BrandID + '">Edit</button>'
+                        +
+                        '<a href="/admin/Brands/Delete/' + response.BrandID + '">Delete</a>' +
+                        '</td>' +
+                        '</tr>';
+
+                    // Ghi đè nội dung hàng cũ
+                    rowToUpdate.replaceWith(newRow);
+                }
+
+                // Reset input
+                $('#txtBrandIDUpdate').val('');
+                $('#txtBrandNameUpdate').val('');
+                alert("✅ Cập nhật thành công!");
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+
+       
+    });
+    // click vào nút Update Brand
+    // đổ dữ liệu 
+    $(document).on('click', '.btnUpdateBrand', function () {
+        const brid = $(event.target).attr('data-brandid');
+        $.ajax({
+            url: `/api/brands?id=${brid}`,
+            type: 'GET',
+            success: function (response) {
+                $('#txtBrandIDUpdate').val(response.BrandID);
+                $('#txtBrandNameUpdate').val(response.BrandName);
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    });
+
+    //click vào nút Delete Brand hieen thị modal
+    $(document).on('click', '.btnDeleteBrand', function () {
+        const brid = $(event.target).attr('data-brandid');
+        $.ajax({
+            url: '/api/brands/' + brid,
+            type: 'GET',
+            success: function (response) {
+                $('#DeleteBrandIDSpan').html(response.BrandID);
+                $('#DeleteBrandNameSpan').html(response.BrandName);
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    });
+
+    $('#btnDelete').click(() => {
+        const brid = $('#DeleteBrandIDSpan').html();
+        $.ajax({
+            url: `/api/brands?id=${brid}`,
+            type: 'DELETE',
+            success: function (response) {
+                // Xóa row khỏi bảng dựa vào BrandID
+                $('.brandTable tr').filter(function () {
+                    return $(this).find('td:first').text().trim() === response.BrandID.toString();
+                }).remove();
+
+                // Xóa nội dung trong modal nếu cần
+                $('#DeleteBrandIDSpan').html('');
+                $('#DeleteBrandNameSpan').html('');
+
+                alert("✅ Xóa thành công!");
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    });
+</script>

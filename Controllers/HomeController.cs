@@ -1,4 +1,5 @@
 ﻿using EFCodeFirst.FIlters;
+using EFCodeFirst.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -89,5 +90,30 @@ namespace EFCodeFirst.Controllers
             ViewBag.mess = mess;
             return View();
         }
-    }
+
+        public ActionResult EditBrands()
+        {
+            CompanyDBContext db = new CompanyDBContext();
+            List<Brand> brands = db.Brands.ToList();
+
+            return View(brands);
+        }
+
+        [HttpPost]
+        public ActionResult EditBrands(List<Brand> brands)
+        {
+            CompanyDBContext db = new CompanyDBContext();
+            foreach (Brand brand in brands)
+            {
+                // tìm bản ghi có BrandID = id
+                Brand brandToUpdate = db.Brands.Find(brand.BrandID);
+                if (brandToUpdate != null)
+                {
+                    brandToUpdate.BrandName = brand.BrandName;
+                }
+            }
+            db.SaveChanges();
+            return RedirectToAction("EditBrands");
+        }
+    } 
 }
